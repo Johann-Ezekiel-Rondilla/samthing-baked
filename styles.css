@@ -1,0 +1,233 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Chewy&display=swap');
+
+/* General Reset */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Atma', serif;
+    text-align: center;
+}
+
+#title-img {
+	width: 300px;
+	height: auto;
+}
+
+#title-img2 {
+	width: 200px;
+	height: auto;
+}
+
+/* Title and Subtitle */
+.title {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #541f29;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #EA526F;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+/* Navigation Menu */
+.menu {
+    list-style: none;
+    background-color: #b56c8c;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #f3a5bf;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #d2691e;
+    color: white;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f4a3c4;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links li a:hover {
+    color: #d2691e;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #f3a5bf;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3a5bf;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dropdown-content li {
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: #6b4226;
+    display: block;
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-content li a:hover {
+    background-color: #d2691e;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu Layout */
+.menu-item {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9e2e8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style images */
+.menu-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style text */
+.menu-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Alternate image position */
+.menu-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
